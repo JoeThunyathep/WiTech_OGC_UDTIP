@@ -31,16 +31,6 @@ To add your token:
 Cesium.Ion.defaultAccessToken = 'YOUR_TOKEN_HERE';
 ```
 
-4. Make sure to include this file in your HTML before initializing the Cesium viewer:
-
-```html
-<!-- In your HTML file -->
-<script src="config.js"></script>
-<script src="token.js"></script>
-<script src="index.js"></script>
-```
-
-
 ## Features
 - 3D building visualization
 - Day/night noise pollution mapping
