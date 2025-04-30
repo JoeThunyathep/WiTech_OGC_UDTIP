@@ -1,5 +1,7 @@
 # UDTIP Project (Urban Digital Twin Interoperability Pilot)
 
+![image](https://github.com/user-attachments/assets/929301d8-f8c3-4059-9354-c59ef58d413a)
+
 ## About UDTIP
 OGC Urban Digital Twins Interoperability Pilot: The Urban Digital Twins Interoperability Pilot aims to improve the interoperability of geospatial data and analyses within digital twins and lay the foundations for better interoperability between Digital Twins developed for separate applications. To provide a useful example of how to improve interoperability, the UDTIP will focus on implementing scenarios and supporting APIs for urban noise analysis and situational analysis of geo-referenced still and moving imagery for use cases in a Smart City.
 
