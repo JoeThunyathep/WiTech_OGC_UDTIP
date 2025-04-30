@@ -1,0 +1,3013 @@
+{
+  "type": "AI_AbstractTrainingDataset",
+  "id": "udt_ucf24",
+  "name": "UDT_UCF24",
+  "description": "Training dataset formulated from GeoPose data that was based on firsthand data collected at the University of Central Florida",
+  "license": "CC BY-SA 4.0",
+  "version": "1.0",
+  "providers": [
+    "University of Central Florida"
+  ],
+  "dataSources": [
+    {
+      "title": "Urban Digital Twin Lab: UCF Roads (Prelimenary)",
+      "date": "2024-09-13"
+    }
+  ],
+  "tasks": [
+    {
+      "type": "AI_AbstractTask",
+      "id": "ucf-udt-task",
+      "description": "Classifying images based on road surface shown."
+    }
+  ],
+  "createdTime": "1970-01-01 00:23:30.270052",
+  "amountOfTrainingData": 42,
+  "numberOfClasses": 3,
+  "classes": [
+    {
+      "key": "unpaved",
+      "value": 1
+    },
+    {
+      "key": "paved",
+      "value": 2
+    },
+    {
+      "key": "asphalt",
+      "value": 3
+    }
+  ],
+  "labeling": [
+    {
+      "type": "AI_AbstractLabeling",
+      "id": "udt_ucf24-labeling1",
+      "scope": {
+        "level": "dataset",
+        "levelDescription": [
+          {
+            "dataset": "udt_ucf24"
+          }
+        ]
+      },
+      "labelers": [
+        {
+          "type": "AI_Labeler",
+          "id": "udt_ucf24-labeler1",
+          "name": "demo-name"
+        }
+      ],
+      "procedure": {
+        "type": "AI_LabelingProcedure",
+        "id": "udt_ucf24-procedure1",
+        "methods": [
+          "manual",
+          "semi-automated"
+        ],
+        "tools": [
+          "CVAT"
+        ]
+      }
+    }
+  ],
+  "data": [
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_1",
+      "dataURL": [
+        "images/img0046.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.591256420693448,
+          "lon": -81.18905174576001,
+          "h": 4.530231831595302
+        },
+        "quaternion": {
+          "qx": 0.5902587618028738,
+          "qy": 0.2433232579549127,
+          "qz": -0.6961858346803842,
+          "qw": 0.3281977441973224
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  423.0,
+                  0.0,
+                  1076.0,
+                  1080.0,
+                  1071.0,
+                  1080.0,
+                  722.0,
+                  952.0,
+                  670.0,
+                  828.0,
+                  546.0,
+                  852.0,
+                  529.0,
+                  842.0,
+                  477.0,
+                  737.0,
+                  432.0,
+                  132.0,
+                  393.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                393.0,
+                1080.0,
+                683.0
+              ],
+              "area": 651706.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_2",
+      "dataURL": [
+        "images/img0047.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.591268051688616,
+          "lon": -81.18905295416187,
+          "h": 4.310764893889427
+        },
+        "quaternion": {
+          "qx": 0.5875766384092032,
+          "qy": 0.249244611868447,
+          "qz": -0.6991136891918392,
+          "qw": 0.3222900740146593
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  352.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  662.0,
+                  958.0,
+                  593.0,
+                  890.0,
+                  446.0,
+                  746.0,
+                  390.0,
+                  163.0,
+                  339.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                339.0,
+                1080.0,
+                741.0
+              ],
+              "area": 725536.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_3",
+      "dataURL": [
+        "images/img0048.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59128570184934,
+          "lon": -81.18905612135111,
+          "h": 4.162331234663725
+        },
+        "quaternion": {
+          "qx": 0.5958768469445628,
+          "qy": 0.2548435149664036,
+          "qz": -0.6904503344713253,
+          "qw": 0.3213471499034487
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  341.0,
+                  0.0,
+                  1077.0,
+                  1080.0,
+                  1075.0,
+                  1072.0,
+                  504.0,
+                  948.0,
+                  431.0,
+                  779.0,
+                  373.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                341.0,
+                1080.0,
+                736.0
+              ],
+              "area": 751770.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_4",
+      "dataURL": [
+        "images/img0049.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59129979111913,
+          "lon": -81.18905073469494,
+          "h": 3.925613978877664
+        },
+        "quaternion": {
+          "qx": 0.5987450181826655,
+          "qy": 0.2534998893437595,
+          "qz": -0.6900615961215503,
+          "qw": 0.3178949510652315
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  371.0,
+                  3.0,
+                  1080.0,
+                  1080.0,
+                  1076.0,
+                  1074.0,
+                  533.0,
+                  809.0,
+                  428.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                371.0,
+                1080.0,
+                709.0
+              ],
+              "area": 707845.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_5",
+      "dataURL": [
+        "images/img0050.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59131820729,
+          "lon": -81.18904903123962,
+          "h": 3.9782632626593113
+        },
+        "quaternion": {
+          "qx": 0.60227922073451,
+          "qy": 0.2495466164443091,
+          "qz": -0.6898297025090089,
+          "qw": 0.3148352598911739
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  388.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1076.0,
+                  1080.0,
+                  552.0,
+                  854.0,
+                  481.0,
+                  847.0,
+                  463.0,
+                  911.0,
+                  479.0,
+                  948.0,
+                  456.0,
+                  340.0,
+                  429.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                388.0,
+                1080.0,
+                692.0
+              ],
+              "area": 683731.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_6",
+      "dataURL": [
+        "images/img0051.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.5913349373717,
+          "lon": -81.1890487486104,
+          "h": 4.140517559833825
+        },
+        "quaternion": {
+          "qx": 0.5976906366259832,
+          "qy": 0.2455134980717886,
+          "qz": -0.6962857892538461,
+          "qw": 0.3125302479231805
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  406.0,
+                  3.0,
+                  1080.0,
+                  1080.0,
+                  1076.0,
+                  1080.0,
+                  598.0,
+                  910.0,
+                  526.0,
+                  1019.0,
+                  505.0,
+                  1003.0,
+                  486.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                406.0,
+                1080.0,
+                674.0
+              ],
+              "area": 668634.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_7",
+      "dataURL": [
+        "images/img0052.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59135240592724,
+          "lon": -81.18904253355208,
+          "h": 3.806125993840397
+        },
+        "quaternion": {
+          "qx": 0.5977842012510876,
+          "qy": 0.2447746356249175,
+          "qz": -0.697560968742546,
+          "qw": 0.3100775671881008
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  402.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  570.0,
+                  1044.0,
+                  550.0,
+                  1080.0,
+                  540.0,
+                  1075.0,
+                  472.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                402.0,
+                1080.0,
+                678.0
+              ],
+              "area": 693563.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_8",
+      "dataURL": [
+        "images/img0053.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.5913723353176,
+          "lon": -81.18903940862275,
+          "h": 3.3267800649628043
+        },
+        "quaternion": {
+          "qx": 0.6022459737164683,
+          "qy": 0.2430548927997887,
+          "qz": -0.6966040730537045,
+          "qw": 0.304904693075829
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  409.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1077.0,
+                  1080.0,
+                  490.0,
+                  544.0,
+                  477.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                409.0,
+                1080.0,
+                671.0
+              ],
+              "area": 664633.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_9",
+      "dataURL": [
+        "images/img0054.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.591383919858743,
+          "lon": -81.18903287530719,
+          "h": 3.1613671435043216
+        },
+        "quaternion": {
+          "qx": 0.5991501431974183,
+          "qy": 0.228130454923496,
+          "qz": -0.7036491430980443,
+          "qw": 0.3063553998077059
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  438.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  524.0,
+                  453.0,
+                  505.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                438.0,
+                1080.0,
+                642.0
+              ],
+              "area": 630235.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_10",
+      "dataURL": [
+        "images/img0055.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.591401946189663,
+          "lon": -81.18903093206211,
+          "h": 3.0562761295586824
+        },
+        "quaternion": {
+          "qx": 0.5954655120929131,
+          "qy": 0.2233948425593386,
+          "qz": -0.7108475596921255,
+          "qw": 0.3003521294384868
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  460.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  541.0,
+                  462.0,
+                  518.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                460.0,
+                1080.0,
+                620.0
+              ],
+              "area": 613258.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_11",
+      "dataURL": [
+        "images/img0056.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59141928418188,
+          "lon": -81.18902290458131,
+          "h": 3.040384345687926
+        },
+        "quaternion": {
+          "qx": 0.5967136522595133,
+          "qy": 0.2283362156393582,
+          "qz": -0.7126893548220287,
+          "qw": 0.2896018840939159
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  485.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  540.0,
+                  306.0,
+                  525.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                485.0,
+                1080.0,
+                595.0
+              ],
+              "area": 599719.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_12",
+      "dataURL": [
+        "images/img0057.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.5914398400814,
+          "lon": -81.18901581914795,
+          "h": 3.019475636072457
+        },
+        "quaternion": {
+          "qx": 0.5977435963061931,
+          "qy": 0.2384320485920093,
+          "qz": -0.707605241562893,
+          "qw": 0.2918007403493748
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  604.0,
+                  0.0,
+                  599.0,
+                  0.0,
+                  1076.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                599.0,
+                1080.0,
+                481.0
+              ],
+              "area": 514620.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_13",
+      "dataURL": [
+        "images/img0058.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59145242126832,
+          "lon": -81.18901843235746,
+          "h": 2.839363866485656
+        },
+        "quaternion": {
+          "qx": 0.5940464565022872,
+          "qy": 0.2562304329914326,
+          "qz": -0.7036322152781759,
+          "qw": 0.2938648838719296
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  721.0,
+                  800.0,
+                  747.0,
+                  0.0,
+                  744.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                721.0,
+                1080.0,
+                359.0
+              ],
+              "area": 364482.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_14",
+      "dataURL": [
+        "images/img0059.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.59146629593528,
+          "lon": -81.18902264367702,
+          "h": 2.7813902078196406
+        },
+        "quaternion": {
+          "qx": 0.5899514403539105,
+          "qy": 0.2738258970289089,
+          "qz": -0.6922775340657503,
+          "qw": 0.3126154333765069
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "asphalt",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  481.0,
+                  0.0,
+                  573.0,
+                  22.0,
+                  576.0,
+                  0.0,
+                  583.0,
+                  0.0,
+                  1050.0,
+                  70.0,
+                  1009.0,
+                  246.0,
+                  1027.0,
+                  589.0,
+                  1007.0,
+                  792.0,
+                  1037.0,
+                  1080.0,
+                  1002.0,
+                  1080.0,
+                  592.0,
+                  1058.0,
+                  592.0,
+                  1080.0,
+                  573.0,
+                  1074.0,
+                  479.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                479.0,
+                1080.0,
+                571.0
+              ],
+              "area": 582138.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_15",
+      "dataURL": [
+        "images/img0060.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.591478042373527,
+          "lon": -81.18902179860196,
+          "h": 2.6359852822497487
+        },
+        "quaternion": {
+          "qx": 0.5722240087999853,
+          "qy": 0.3062367643236564,
+          "qz": -0.6759417048395351,
+          "qw": 0.3491155657311759
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "asphalt",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  505.0,
+                  0.0,
+                  1077.0,
+                  1080.0,
+                  1076.0,
+                  1080.0,
+                  512.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                505.0,
+                1080.0,
+                572.0
+              ],
+              "area": 613441.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_16",
+      "dataURL": [
+        "images/img0646.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604153903338773,
+          "lon": -81.18956388547971,
+          "h": -0.0302008092403411
+        },
+        "quaternion": {
+          "qx": 0.6309598439741282,
+          "qy": -0.1504012764962793,
+          "qz": -0.740581528777983,
+          "qw": -0.1755222305496321
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  372.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  385.0,
+                  542.0,
+                  381.0,
+                  529.0,
+                  404.0,
+                  521.0,
+                  389.0,
+                  487.0,
+                  381.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                372.0,
+                1080.0,
+                708.0
+              ],
+              "area": 755629.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_17",
+      "dataURL": [
+        "images/img0647.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60416138595543,
+          "lon": -81.18953840664798,
+          "h": 0.0254893060773611
+        },
+        "quaternion": {
+          "qx": 0.6358798017861625,
+          "qy": -0.1446354305650296,
+          "qz": -0.7386754454500406,
+          "qw": -0.1705758410630912
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  380.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1077.0,
+                  1080.0,
+                  405.0,
+                  525.0,
+                  392.0,
+                  513.0,
+                  416.0,
+                  497.0,
+                  418.0,
+                  488.0,
+                  391.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                380.0,
+                1080.0,
+                700.0
+              ],
+              "area": 740335.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_18",
+      "dataURL": [
+        "images/img0648.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604168411713943,
+          "lon": -81.18951278448459,
+          "h": -0.0333935245871543
+        },
+        "quaternion": {
+          "qx": 0.6364886645752305,
+          "qy": -0.1398103735747187,
+          "qz": -0.740296538994192,
+          "qw": -0.1652155294896015
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  364.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  390.0,
+                  1043.0,
+                  385.0,
+                  972.0,
+                  389.0,
+                  906.0,
+                  381.0,
+                  817.0,
+                  388.0,
+                  507.0,
+                  381.0,
+                  506.0,
+                  400.0,
+                  496.0,
+                  404.0,
+                  488.0,
+                  381.0,
+                  458.0,
+                  377.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                364.0,
+                1080.0,
+                716.0
+              ],
+              "area": 757155.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_19",
+      "dataURL": [
+        "images/img0649.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60417674701161,
+          "lon": -81.18948414049078,
+          "h": 0.0101299481466412
+        },
+        "quaternion": {
+          "qx": 0.6360746341942831,
+          "qy": -0.1358050771875089,
+          "qz": -0.7425691108542225,
+          "qw": -0.159865760922665
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  367.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  388.0,
+                  508.0,
+                  380.0,
+                  505.0,
+                  408.0,
+                  496.0,
+                  411.0,
+                  484.0,
+                  380.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                367.0,
+                1080.0,
+                713.0
+              ],
+              "area": 756368.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_20",
+      "dataURL": [
+        "images/img0650.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60418531962822,
+          "lon": -81.18945645121273,
+          "h": 0.0088134435936808
+        },
+        "quaternion": {
+          "qx": 0.6397336093950726,
+          "qy": -0.1290663058950715,
+          "qz": -0.7430823044003302,
+          "qw": -0.1480256273337525
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  379.0,
+                  0.0,
+                  510.0,
+                  5.0,
+                  511.0,
+                  0.0,
+                  514.0,
+                  0.0,
+                  542.0,
+                  8.0,
+                  542.0,
+                  0.0,
+                  548.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  396.0,
+                  540.0,
+                  389.0,
+                  525.0,
+                  394.0,
+                  525.0,
+                  420.0,
+                  520.0,
+                  425.0,
+                  508.0,
+                  420.0,
+                  505.0,
+                  390.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                379.0,
+                1080.0,
+                701.0
+              ],
+              "area": 745981.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_21",
+      "dataURL": [
+        "images/img0651.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604193547749563,
+          "lon": -81.18943013371107,
+          "h": -0.0152907026931643
+        },
+        "quaternion": {
+          "qx": 0.6374347575411264,
+          "qy": -0.1173546259551105,
+          "qz": -0.7485399887688186,
+          "qw": -0.1399740081841863
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  345.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  363.0,
+                  1057.0,
+                  355.0,
+                  1004.0,
+                  352.0,
+                  939.0,
+                  360.0,
+                  868.0,
+                  354.0,
+                  558.0,
+                  355.0,
+                  557.0,
+                  382.0,
+                  550.0,
+                  394.0,
+                  528.0,
+                  382.0,
+                  531.0,
+                  368.0,
+                  525.0,
+                  356.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                345.0,
+                1080.0,
+                735.0
+              ],
+              "area": 784354.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_22",
+      "dataURL": [
+        "images/img0652.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60420243811627,
+          "lon": -81.18940474894622,
+          "h": -0.1753037339076399
+        },
+        "quaternion": {
+          "qx": 0.6453416978933156,
+          "qy": -0.1080009932192081,
+          "qz": -0.7450540965591134,
+          "qw": -0.1294773064835555
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  345.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  353.0,
+                  593.0,
+                  351.0,
+                  579.0,
+                  368.0,
+                  587.0,
+                  373.0,
+                  587.0,
+                  382.0,
+                  570.0,
+                  399.0,
+                  560.0,
+                  401.0,
+                  556.0,
+                  387.0,
+                  543.0,
+                  375.0,
+                  556.0,
+                  372.0,
+                  558.0,
+                  357.0,
+                  545.0,
+                  352.0,
+                  159.0,
+                  352.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                345.0,
+                1080.0,
+                735.0
+              ],
+              "area": 785444.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_23",
+      "dataURL": [
+        "images/img0653.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60421276934525,
+          "lon": -81.18937946507315,
+          "h": -0.1272502643987536
+        },
+        "quaternion": {
+          "qx": 0.6432097075794214,
+          "qy": -0.091206570527371,
+          "qz": -0.7506820983425422,
+          "qw": -0.1201624420974089
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  355.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  364.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                355.0,
+                1080.0,
+                725.0
+              ],
+              "area": 778140.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_24",
+      "dataURL": [
+        "images/img0654.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604222372788687,
+          "lon": -81.18935609360392,
+          "h": -0.386307499371469
+        },
+        "quaternion": {
+          "qx": 0.6449984031385896,
+          "qy": -0.0725267142698996,
+          "qz": -0.7543803255115331,
+          "qw": -0.098119088334104
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  354.0,
+                  0.0,
+                  1080.0,
+                  1067.0,
+                  1080.0,
+                  1068.0,
+                  1078.0,
+                  1080.0,
+                  1077.0,
+                  1080.0,
+                  357.0,
+                  1066.0,
+                  355.0,
+                  984.0,
+                  356.0,
+                  957.0,
+                  354.0,
+                  634.0,
+                  354.0,
+                  616.0,
+                  357.0,
+                  608.0,
+                  355.0,
+                  384.0,
+                  353.0,
+                  311.0,
+                  355.0,
+                  52.0,
+                  354.0,
+                  48.0,
+                  352.0,
+                  18.0,
+                  354.0,
+                  9.0,
+                  352.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                352.0,
+                1080.0,
+                728.0
+              ],
+              "area": 783753.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_25",
+      "dataURL": [
+        "images/img0655.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60423441071388,
+          "lon": -81.18933135684141,
+          "h": -0.3639278821647167
+        },
+        "quaternion": {
+          "qx": 0.6499010455207945,
+          "qy": -0.038548468338083,
+          "qz": -0.7568823097339736,
+          "qw": -0.0572005986622828
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  355.0,
+                  4.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  371.0,
+                  964.0,
+                  370.0,
+                  948.0,
+                  360.0,
+                  934.0,
+                  370.0,
+                  911.0,
+                  360.0,
+                  867.0,
+                  371.0,
+                  668.0,
+                  363.0,
+                  685.0,
+                  403.0,
+                  667.0,
+                  438.0,
+                  642.0,
+                  439.0,
+                  640.0,
+                  407.0,
+                  627.0,
+                  422.0,
+                  625.0,
+                  395.0,
+                  656.0,
+                  363.0,
+                  542.0,
+                  370.0,
+                  509.0,
+                  358.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                355.0,
+                1080.0,
+                725.0
+              ],
+              "area": 770941.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_26",
+      "dataURL": [
+        "images/img0656.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60424766546,
+          "lon": -81.18930907538135,
+          "h": -0.5364207811653614
+        },
+        "quaternion": {
+          "qx": 0.6527769470361723,
+          "qy": 0.005951747425133,
+          "qz": -0.7574934670498131,
+          "qw": -0.007100012920485
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  370.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  1080.0,
+                  372.0,
+                  715.0,
+                  372.0,
+                  732.9,
+                  401.4,
+                  730.2,
+                  441.7,
+                  715.7,
+                  441.4,
+                  691.5,
+                  435.8,
+                  708.0,
+                  371.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                370.0,
+                1080.0,
+                710.0
+              ],
+              "area": 763724.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_27",
+      "dataURL": [
+        "images/img0657.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60426401391633,
+          "lon": -81.18929053074204,
+          "h": -0.7349010678008199
+        },
+        "quaternion": {
+          "qx": 0.6478020682384714,
+          "qy": 0.0627983822769718,
+          "qz": -0.7572885710667248,
+          "qw": 0.0540632508866644
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1079.8,
+                  1080.0,
+                  0.0,
+                  1079.4,
+                  1.5,
+                  353.8,
+                  792.84,
+                  356.58,
+                  797.68,
+                  395.68,
+                  776.0,
+                  410.0,
+                  775.23,
+                  417.74,
+                  784.32,
+                  418.32,
+                  782.39,
+                  450.26,
+                  802.32,
+                  450.26,
+                  815.48,
+                  449.29,
+                  815.48,
+                  404.97,
+                  800.0,
+                  393.55,
+                  794.58,
+                  355.42,
+                  1078.2,
+                  360.8
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                353.8,
+                1079.8,
+                726.2
+              ],
+              "area": 778758.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_28",
+      "dataURL": [
+        "images/img0658.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604283382400222,
+          "lon": -81.18927664702987,
+          "h": -0.9766457099467516
+        },
+        "quaternion": {
+          "qx": 0.6311925146128403,
+          "qy": 0.147098080674346,
+          "qz": -0.7459498833005663,
+          "qw": 0.1533525278615206
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  1080.0,
+                  0.0,
+                  726.51,
+                  2.0,
+                  347.48,
+                  902.0,
+                  339.74,
+                  903.55,
+                  390.06,
+                  871.81,
+                  413.29,
+                  889.61,
+                  418.71,
+                  881.48,
+                  460.32,
+                  928.9,
+                  458.19,
+                  925.81,
+                  398.19,
+                  906.84,
+                  385.23,
+                  905.68,
+                  339.94,
+                  1080.0,
+                  336.68,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                336.68,
+                1080.0,
+                743.32
+              ],
+              "area": 792857.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_29",
+      "dataURL": [
+        "images/img0659.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60430643278775,
+          "lon": -81.1892709661437,
+          "h": -1.1050480995327234
+        },
+        "quaternion": {
+          "qx": 0.6048240016848012,
+          "qy": 0.2366279541301399,
+          "qz": -0.7121439737547663,
+          "qw": 0.2665449823026202
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  1080.0,
+                  1077.55,
+                  343.23,
+                  167.87,
+                  350.97,
+                  0.0,
+                  347.24,
+                  0.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                343.23,
+                1080.0,
+                736.77
+              ],
+              "area": 790345.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_30",
+      "dataURL": [
+        "images/img0660.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60433158359572,
+          "lon": -81.1892727980304,
+          "h": -1.3697758130729198
+        },
+        "quaternion": {
+          "qx": 0.5585864606200023,
+          "qy": 0.3451688425758637,
+          "qz": -0.6499544984512395,
+          "qw": 0.3826209025901399
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  1079.7,
+                  0.0,
+                  1080.0,
+                  0.0,
+                  349.26,
+                  405.16,
+                  358.9,
+                  730.32,
+                  355.03,
+                  1076.77,
+                  351.16,
+                  1080.0,
+                  733.92
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                349.26,
+                1080.0,
+                730.74
+              ],
+              "area": 782776.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_31",
+      "dataURL": [
+        "images/img0661.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604354649081024,
+          "lon": -81.18928799053386,
+          "h": -1.4197612619027495
+        },
+        "quaternion": {
+          "qx": 0.4887757182276573,
+          "qy": 0.4419270359806995,
+          "qz": -0.5679223825224055,
+          "qw": 0.4932169790982877
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  355.09,
+                  618.06,
+                  364.71,
+                  246.45,
+                  355.03,
+                  0.0,
+                  347.45,
+                  0.0,
+                  808.31,
+                  0.6,
+                  1080.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                347.45,
+                1080.0,
+                732.55
+              ],
+              "area": 779808.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_32",
+      "dataURL": [
+        "images/img0662.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604369429830182,
+          "lon": -81.18931154684728,
+          "h": -1.6002220762893558
+        },
+        "quaternion": {
+          "qx": 0.4001268636142472,
+          "qy": 0.5292325041214166,
+          "qz": -0.4642605049787148,
+          "qw": 0.5867482891968179
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  1080.0,
+                  0.0,
+                  340.68,
+                  441.01,
+                  347.64,
+                  791.72,
+                  349.96,
+                  1080.0,
+                  340.74,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                340.68,
+                1080.0,
+                739.32
+              ],
+              "area": 792740.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_33",
+      "dataURL": [
+        "images/img0663.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60437485021805,
+          "lon": -81.18933817505369,
+          "h": -1.627418897114694
+        },
+        "quaternion": {
+          "qx": 0.2900619479289851,
+          "qy": 0.6023927513413629,
+          "qz": -0.3267305509028662,
+          "qw": 0.668007617232684
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  0.0,
+                  345.31,
+                  742.94,
+                  336.03,
+                  1080.0,
+                  338.32,
+                  1080.0,
+                  1079.25,
+                  0.0,
+                  1079.25
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                336.03,
+                1080.0,
+                743.22
+              ],
+              "area": 798564.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_34",
+      "dataURL": [
+        "images/img0664.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.604371880242937,
+          "lon": -81.18936576801919,
+          "h": -1.6318277595564723
+        },
+        "quaternion": {
+          "qx": 0.1557282596737046,
+          "qy": 0.6511620797544533,
+          "qz": -0.1664427957240112,
+          "qw": 0.7239016292491636
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "unpaved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  2.04,
+                  1079.25,
+                  0.0,
+                  420.85,
+                  0.0,
+                  329.05,
+                  631.46,
+                  317.44,
+                  1077.39,
+                  312.8,
+                  1080.0,
+                  600.41,
+                  1080.0,
+                  1080.0,
+                  351.03,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                312.8,
+                1080.0,
+                767.2
+              ],
+              "area": 819830.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_35",
+      "dataURL": [
+        "images/img0944.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60872253790325,
+          "lon": -81.19555309613537,
+          "h": 3.066297803074121
+        },
+        "quaternion": {
+          "qx": -0.0513045328570304,
+          "qy": 0.6503696816662663,
+          "qz": 0.0792444581858139,
+          "qw": 0.7537290520924419
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  586.0,
+                  783.0,
+                  433.0,
+                  760.0,
+                  408.0,
+                  768.0,
+                  404.0,
+                  764.0,
+                  398.0,
+                  771.0,
+                  387.0,
+                  784.0,
+                  386.0,
+                  779.0,
+                  372.0,
+                  776.0,
+                  384.0,
+                  769.0,
+                  378.0,
+                  772.0,
+                  373.0,
+                  689.0,
+                  371.0,
+                  507.0,
+                  374.0,
+                  496.0,
+                  384.0,
+                  476.0,
+                  377.0,
+                  470.0,
+                  382.0,
+                  406.0,
+                  380.0,
+                  377.0,
+                  387.0,
+                  323.0,
+                  385.0,
+                  307.0,
+                  373.0,
+                  272.0,
+                  372.0,
+                  170.0,
+                  373.0,
+                  165.0,
+                  382.0,
+                  147.0,
+                  384.0,
+                  129.0,
+                  374.0,
+                  0.0,
+                  380.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                371.0,
+                1080.0,
+                709.0
+              ],
+              "area": 719867.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_36",
+      "dataURL": [
+        "images/img0945.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60869446176001,
+          "lon": -81.19556529420622,
+          "h": 2.961692709475756
+        },
+        "quaternion": {
+          "qx": -0.1188335854905339,
+          "qy": 0.6396967327519283,
+          "qz": 0.1345211011792748,
+          "qw": 0.7473759343440228
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  554.0,
+                  879.0,
+                  454.0,
+                  825.0,
+                  394.0,
+                  6.0,
+                  402.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                394.0,
+                1080.0,
+                686.0
+              ],
+              "area": 711812.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_37",
+      "dataURL": [
+        "images/img0946.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.608667360601903,
+          "lon": -81.19557296884655,
+          "h": 2.872341610491276
+        },
+        "quaternion": {
+          "qx": -0.1491976614260306,
+          "qy": 0.634399032610949,
+          "qz": 0.1745033877106994,
+          "qw": 0.7381237152436495
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  454.0,
+                  1049.0,
+                  432.0,
+                  1037.0,
+                  403.0,
+                  843.0,
+                  385.0,
+                  670.0,
+                  403.0,
+                  0.0,
+                  407.0,
+                  0.0,
+                  1080.0,
+                  1080.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                385.0,
+                1080.0,
+                695.0
+              ],
+              "area": 731715.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_38",
+      "dataURL": [
+        "images/img0947.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.608635326010965,
+          "lon": -81.19558508794911,
+          "h": 3.0640286803245544
+        },
+        "quaternion": {
+          "qx": -0.1631849438561769,
+          "qy": 0.6281707063031817,
+          "qz": 0.1965370864319505,
+          "qw": 0.7349457920277503
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  954.31,
+                  1080.0,
+                  417.8,
+                  876.49,
+                  406.17,
+                  658.17,
+                  443.33,
+                  344.62,
+                  447.97,
+                  0.0,
+                  443.35,
+                  0.0,
+                  839.38,
+                  0.88,
+                  1079.72,
+                  1080.0,
+                  1079.72
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                406.17,
+                1080.0,
+                673.55
+              ],
+              "area": 696371.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_39",
+      "dataURL": [
+        "images/img0948.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.6085993638666,
+          "lon": -81.1955995882382,
+          "h": 2.7947182217612863
+        },
+        "quaternion": {
+          "qx": -0.1560365796584463,
+          "qy": 0.6302783612360375,
+          "qz": 0.2021037951300228,
+          "qw": 0.7331820165916941
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1078.54,
+                  1080.0,
+                  1073.91,
+                  392.23,
+                  843.97,
+                  403.84,
+                  709.26,
+                  406.17,
+                  551.33,
+                  399.2,
+                  502.55,
+                  408.49,
+                  458.43,
+                  420.1,
+                  351.59,
+                  420.1,
+                  295.84,
+                  431.72,
+                  228.49,
+                  450.3,
+                  86.81,
+                  464.23,
+                  0.0,
+                  450.88,
+                  0.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                392.23,
+                1078.54,
+                687.77
+              ],
+              "area": 710982.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_40",
+      "dataURL": [
+        "images/img0949.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60855991602058,
+          "lon": -81.19561516164569,
+          "h": 2.8302089907228947
+        },
+        "quaternion": {
+          "qx": -0.1551120601029803,
+          "qy": 0.6381800058087236,
+          "qz": 0.1819069762055751,
+          "qw": 0.7318308978369394
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  826.26,
+                  1078.55,
+                  408.49,
+                  955.46,
+                  394.55,
+                  874.17,
+                  434.04,
+                  818.43,
+                  431.72,
+                  755.72,
+                  413.14,
+                  693.01,
+                  429.39,
+                  627.97,
+                  447.97,
+                  488.62,
+                  447.97,
+                  388.75,
+                  447.97,
+                  137.91,
+                  417.78,
+                  35.72,
+                  378.3,
+                  0.88,
+                  382.94,
+                  3.19,
+                  1080.0,
+                  949.02,
+                  1080.0,
+                  1080.0,
+                  1079.72
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.88,
+                378.3,
+                1079.12,
+                701.7
+              ],
+              "area": 705447.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_41",
+      "dataURL": [
+        "images/img0950.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60852023299827,
+          "lon": -81.19563439852818,
+          "h": 2.934686942026019
+        },
+        "quaternion": {
+          "qx": -0.1333058502030844,
+          "qy": 0.642624541524584,
+          "qz": 0.1626108683671541,
+          "qw": 0.7367639066196575
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  623.0,
+                  1065.0,
+                  609.0,
+                  884.0,
+                  584.0,
+                  871.0,
+                  596.0,
+                  843.0,
+                  575.0,
+                  695.0,
+                  558.0,
+                  6.0,
+                  609.0,
+                  0.0,
+                  1077.0,
+                  1080.0,
+                  1075.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                558.0,
+                1080.0,
+                519.0
+              ],
+              "area": 529890.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "AI_AbstractTrainingData",
+      "id": "annotated_image_42",
+      "dataURL": [
+        "images/img0951.jpg"
+      ],
+      "trainingType": "training",
+      "geopose": {
+        "authority": "/geopose/1.0",
+        "id": "RotateTranslate",
+        "position": {
+          "lat": 28.60847991405192,
+          "lon": -81.1956583144056,
+          "h": 3.0796340070664883
+        },
+        "quaternion": {
+          "qx": -0.1207016974656444,
+          "qy": 0.6455363413226594,
+          "qz": 0.1503594965978506,
+          "qw": 0.7389898217713714
+        }
+      },
+      "labels": [
+        {
+          "type": "AI_ObjectLabel",
+          "class": "paved",
+          "object": {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  1080.0,
+                  755.0,
+                  939.0,
+                  784.0,
+                  760.0,
+                  784.0,
+                  558.0,
+                  807.0,
+                  555.0,
+                  820.0,
+                  523.0,
+                  813.0,
+                  0.0,
+                  893.0,
+                  0.0,
+                  1080.0,
+                  1075.0,
+                  1080.0
+                ]
+              ]
+            },
+            "properties": {
+              "bbox": [
+                0.0,
+                755.0,
+                1080.0,
+                325.0
+              ],
+              "area": 281385.0,
+              "attributes": {
+                "occluded": false
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

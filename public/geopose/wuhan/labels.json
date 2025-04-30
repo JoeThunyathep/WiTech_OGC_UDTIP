@@ -1,0 +1,140 @@
+{
+    "type": "AI_EOTrainingDataset",
+    "id": "whu_example",
+    "name": "WHU-Example",
+    "description": "Example dataset for UDTIP.",
+    "version": "1.0",
+    "amountOfTrainingData": 3,
+    "createdTime": "2024-10-10",
+    "providers": [
+        "Wuhan University"
+    ],
+    "classes": [
+        {
+            "key": "Asphalt Road",
+            "value": null
+        },
+        {
+            "key": "Cement Road",
+            "value": null
+        },
+        {
+            "key": "Dirt Road",
+            "value": null
+        }
+    ],
+    "numberOfClasses": 3,
+    "bands": [
+        {
+            "name": [
+                {
+                    "code": "red"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "green"
+                }
+            ]
+        },
+        {
+            "name": [
+                {
+                    "code": "blue"
+                }
+            ]
+        }
+    ],
+    "tasks": [
+        {
+            "type": "AI_EOTask",
+            "id": "whu_example",
+            "taskType": "Scene Classification"
+        }
+    ],
+    "data": [
+        {
+            "type": "AI_EOTrainingData",
+            "id": "road_01",
+            "dataURL": [
+                "pic001.jpg"
+            ],
+            "labels": [
+                {
+                    "type": "AI_SceneLabel",
+                    "class": "Cement Road"
+                }
+            ],
+            "dataTime": "2024-10-01",
+            "geopose": {
+                "position": {
+                    "lon": 114.293483,
+                    "lat": 30.606896,
+                    "h": 11.0
+                },
+                "quaternion": {
+                    "x": 0.20154473382601948,
+                    "y": -0.18111675703887213,
+                    "z": 0.2660908114262869,
+                    "w": -0.9050852994339209
+                }
+            }
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "road_02",
+            "dataURL": [
+                "pic002.jpg"
+            ],
+            "labels": [
+                {
+                    "type": "AI_SceneLabel",
+                    "class": "Dirt Road"
+                }
+            ],
+            "dataTime": "2024-10-01",
+            "geopose": {
+                "position": {
+                    "lon": 114.297585,
+                    "lat": 30.607227,
+                    "h": 11.5
+                },
+                "quaternion": {
+                    "x": 0.20054473382601948,
+                    "y": -0.08111675703887213,
+                    "z": 0.4660908114262869,
+                    "w": -0.9050852994339209
+                }
+            }
+        },
+        {
+            "type": "AI_EOTrainingData",
+            "id": "road_03",
+            "dataURL": [
+                "pic003.jpg"
+            ],
+            "labels": [
+                {
+                    "type": "AI_SceneLabel",
+                    "class": "Asphalt Road"
+                }
+            ],
+            "dataTime": "2024-10-01",
+            "geopose": {
+                "position": {
+                    "lon": 114.287570,
+                    "lat": 30.614271,
+                    "h": 10.5
+                },
+                "quaternion": {
+                    "x": 0.80054473382601948,
+                    "y": -0.08111675703887213,
+                    "z": 0.3660908114262869,
+                    "w": -0.9050852994339209
+                }
+            }
+        }
+    ]
+}

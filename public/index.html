@@ -1,0 +1,239 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.97/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesium.com/downloads/cesiumjs/releases/1.97/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+    <script src="viewerCesiumNavigationMixin.js"> </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:wght@300..700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="img/hft.png" type="image/png">
+</head>
+
+<body>
+    <div id="navbar" class="navbar">
+
+        <h4 class="fw-bold" style="margin-left: 20px;">OGC Urban Digital Twins Interoperability Pilot</h4>
+
+        <img src="img/logo-udtip.jpg" alt="" width="450" style="margin-right: 15;">
+    </div>
+    <div class="row" style="overflow: hidden; margin: 0px;background: #002544;">
+        <div id="menuContainer">
+            <div>
+                <div class="card ub-card">
+                    <a class="btn btn-secondary headline-section" data-bs-toggle="collapse" href="#infoZumG"
+                        role="button" aria-expanded="false" aria-controls="infoZumG">
+                        <i class="bi bi-info-circle"></i> OGC UDTIP 2024
+                    </a>
+
+                    <div class="collapse show" id="infoZumG">
+                        <div class="card card-body">
+                            <div>
+                                <p style="font-size: 0.75em;">The Urban Digital Twins Interoperability Pilot aims to
+                                    improve the interoperability of geospatial data and analyses within digital twins
+                                    and lay the foundations for better interoperability between Digital Twins developed
+                                    for separate applications. To provide a useful example of how to improve
+                                    interoperability, the UDTIP will focus on implementing scenarios and supporting APIs
+                                    for <strong>urban noise analysis</strong> and <strong>situational analysis of
+                                        geo-referenced still and moving imagery</strong> for use cases in a Smart City.
+                                </p>
+                            </div>
+                            <a href="https://www.ogc.org/initiatives/ogc-urban-digital-twin-interoperability/"
+                                target="_blank" class="btn btn-outline-secondary btn-fly-to-area">More about this
+                                project <i class="bi bi-arrow-up-right-square-fill"></i></a>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary headline-section" data-bs-toggle="collapse" href="#noiseSimulation"
+                        role="button" aria-expanded="false" aria-controls="noiseSimulation">
+                        Noise Modeling
+                    </a>
+
+                    <div class="collapse show" id="noiseSimulation">
+                        <div class="card card-body">
+                            <button id="go-to-Korea-button" class="btn btn-outline-secondary btn-fly-to-area">Go to this
+                                study area <i class="bi bi-arrow-right-circle-fill"></i></button>
+                            <!-- <div>
+                                <p style="font-size: 0.75em;">Urban Noise Analysis</p>
+                            </div> -->
+                            <!-- the iframe size is managed on index.css - chartFrame -->
+                            <h6 class="fw-bold">Ground Noise Simulation</h6>
+                                <div class="form-check">
+                                    <input id="noiseDayCheckbox" class="form-check-input layerCheckbox groundNoiseCheckbox" type="checkbox"
+                                        value="noise_day" layer="noise_day">
+                                    <label class="form-check-label infoZum-text">
+                                        Ground Noise - Day time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="noiseNightCheckbox" class="form-check-input layerCheckbox groundNoiseCheckbox" type="checkbox"
+                                        value="noise_day" layer="noise_day">
+                                    <label class="form-check-label infoZum-text">
+                                        Ground Noise - Night time
+                                    </label>
+
+                                </div>
+                            <h6 class="fw-bold">3D Noise Simulation</h6>
+                                <div class="form-check">
+                                    <input id="pointCloudGround_Checkbox" class="form-check-input layerCheckbox threeDNoiseCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        4M above terrain - Day time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="pointCloud20m_Checkbox" class="form-check-input layerCheckbox threeDNoiseCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        20M above terrain - Day time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="pointCloud40m_Checkbox" class="form-check-input layerCheckbox threeDNoiseCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        40M above terrain - Day time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="pointCloud60m_Checkbox" class="form-check-input layerCheckbox threeDNoiseCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        60M above terrain - Day time
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="pointCloud80m_Checkbox" class="form-check-input layerCheckbox threeDNoiseCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        80M above terrain - Day time
+                                    </label>
+                                </div>
+                            <h6 class="fw-bold">Building Noise Simulation (Gaia3D)</h6>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Night" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building Noise Night time (GLB)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Day" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building Noise Day time (GLB)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Night3dTiles" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building & Ground Noise Night time (3D Tiles)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Day3dTiles" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building & Ground Noise Day time (3D Tiles)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Night3dTiles_5m" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building & Ground Noise Night time (3D Tiles) 5m offset
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input id="buildingNoise_Checkbox_Day3dTiles_5m" class="form-check-input layerCheckbox"
+                                        type="checkbox">
+                                    <label class="form-check-label infoZum-text">
+                                        Building & Ground Noise Day time (3D Tiles) 5m offset
+                                    </label>
+                                </div>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-secondary headline-section" data-bs-toggle="collapse" href="#geopose_data"
+                        role="button" aria-expanded="false" aria-controls="geopose_data">
+                        Camera Imagery Interoperability
+                    </a>
+
+                    <div class="collapse show" id="geopose_data">
+                        <div class="card card-body">
+                            <h6 class="fw-bold">Geopose data</h6>
+                            <button id="go-to-wuhan-button" class="btn btn-outline-secondary btn-fly-to-area">Go to this
+                                study area (1-Wuhan) <i class="bi bi-arrow-right-circle-fill"></i></button>
+                            <!-- New Button for UCF -->
+                            <button id="go-to-ucf-button" class="btn btn-outline-secondary btn-fly-to-area mt-2">Go to this
+                                study area (2-UCF) <i class="bi bi-arrow-right-circle-fill"></i></button>
+                            <div id="geo-pose-menu" class="container mt-3"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h6>Copyright 2025 WiTech@HFT Stuttgart; Developed by <a href="https://www.linkedin.com/in/thunyatheps/" target="_blank">Joe T. Santhanavanich</a> & Rushikesh Padsala</h6>
+                    <ul class="copyright">
+                        <h6 class="footer-link"><a href="https://www.linkedin.com/in/thunyatheps/" target="_blank">About Me</a></h6>
+                        <h6 class="impressum footer-link"><a href="https://www.hft-stuttgart.de/impressum"
+                                target="_blank">Impressum</a></h6>
+                        <h6 class="footer-link"><a href="https://www.hft-stuttgart.de/datenschutz"
+                                target="_blank">Datenschutz</a></h6>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="cesiumContainer" class="col"></div>
+    </div>
+    <div id="wuhan-geopose-content" class="metaDataCard"></div>
+    <div id="noise-legend" class="legend cesiumLegend">
+        <div id="noise-legend-2d" style="display: none;">
+            <b>Noise Level</b> <br>
+            <span class="dot" style="background-color: #F7F4F9"></span> <=25 dB<br>
+            <span class="dot" style="background-color: #E9E3F0"></span> 25 - 30 dB<br>
+            <span class="dot" style="background-color: #D8C2DF"></span> 30 - 35 dB<br>
+            <span class="dot" style="background-color: #CDA0CD"></span> 35 - 40 dB<br>
+            <span class="dot" style="background-color: #D57ABA"></span> 40 - 45 dB<br>
+            <span class="dot" style="background-color: #E34A9F"></span> 45 - 50 dB<br>
+            <span class="dot" style="background-color: #DF2179"></span> 50 - 55 dB<br>
+            <span class="dot" style="background-color: #C20E52"></span> 55 - 60 dB<br>
+            <span class="dot" style="background-color: #93003F"></span> 60 - 65 dB<br>
+            <span class="dot" style="background-color: #67001F"></span> >= 65 dB<br>
+        </div>
+        <div id="noise-legend-3d" style="display: none;">
+            <b> 3D Noise Level</b> <br>
+            <span class="dot" style="background-color: #FFFFFF"></span><=25 dB<br>
+            <span class="dot" style="background-color: #E0F7FA"></span> 25 - 30 dB<br>
+            <span class="dot" style="background-color: #B2EBF2"></span> 30 - 35 dB<br>
+            <span class="dot" style="background-color: #80DEEA"></span> 35 - 40 dB<br>
+            <span class="dot" style="background-color: #4DD0E1"></span> 40 - 45 dB<br>
+            <span class="dot" style="background-color: #26C6DA"></span> 45 - 50 dB<br>
+            <span class="dot" style="background-color: #00BCD4"></span> 50 - 55 dB<br>
+            <span class="dot" style="background-color: #FFB74D"></span> 55 - 60 dB<br>
+            <span class="dot" style="background-color: #FF9800"></span> 60 - 65 dB<br>
+            <span class="dot" style="background-color: #F44336"></span> >= 65 dB<br>
+        </div>
+    </div>
+    </div>
+    <div id="ucf-geopose-content" class="metaDataCard" style="display:none;"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Load configuration -->
+    <script src="config.js"></script>
+
+    <script src="index.js"></script>
+    <script src="point_cloud_manager.js"></script>
+    
+
+</body>
+
+</html>

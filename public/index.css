@@ -1,0 +1,247 @@
+/* making height 50px varaible */
+/* set body font to be Quicksand */
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --navbar-height: 75px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #002544;
+  /* Dark green color */
+}
+
+#navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: var(--navbar-height);
+  background-color: #fff;
+}
+
+#menuContainer {
+  /* top: 50px; */
+  width: 400px;
+  height: calc(100vh - var(--navbar-height));
+  overflow: auto;
+  background: #002544;
+  color: #002544;
+}
+
+#cesiumContainer {
+  height: calc(100vh - var(--navbar-height) - 30px);
+  width: 100%;
+  margin: 15px;
+  padding: 0;
+  border-radius: 25px;
+}
+
+.cesium-viewer {
+  border-radius: 25px;
+}
+
+.ub-card {
+  border-radius: 20px;
+  padding: 20;
+  background-color: #fff;
+  margin: 15px 5px;
+}
+
+/* Remove Cesium Clock and Credit */
+/* .cesium-credit-textContainer {
+  display: none !important;
+}
+
+.cesium-credit-expand-link {
+  display: none !important;
+} */
+
+.cesium-viewer-animationContainer {
+  display: none !important;
+}
+
+.cesium-viewer-bottom {
+  display: none !important;
+}
+
+.chartFrame {
+  width: 100%;
+  border: none;
+  height: 365px;
+  background: white;
+  /* border-radius: 25px; */
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.infoZum-text {
+  font-size: 0.75em;
+}
+
+.fellbach-note {
+  color: red;
+}
+
+.page-item .page-link {
+  z-index: 3;
+  color: #6a6a6a;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #2b6b5b;
+  border-color: #0d6efd;
+}
+
+.form-check-input:checked {
+  background-color: #2b6b5b;
+  border-color: #2b6b5b;
+}
+
+.headline-section {
+  font-weight: 800;
+  font-size: 1.25em;
+}
+
+.fs-08 {
+  font-size: 0.8em;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #34576b;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #2b6b5b;
+  border-color: #2b6b5b;
+}
+
+.btn-secondary:focus {
+  color: #fff;
+  background-color: #2b6b5b;
+  border-color: #2b6b5b;
+}
+
+.compass {
+  top: 50px;
+}
+
+.navigation-controls {
+  top: 150px;
+  background: #00254457;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px 20px;
+  background-color: #f1f1f1; /* You can change the background color as needed */
+  position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-left: -10px;
+}
+
+.footer h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px; /* Adds space between the list items */
+}
+
+.footer ul h6 {
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000; /* You can change the color as needed */
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.dot {
+  border-width: 0.5px;
+  border-color: black;
+  border-style: solid;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#Trinkwasserbezug-legend {
+  font-size: 0.7em; 
+  display:none;
+  position: absolute;
+  right: 0px;
+  bottom: 80px;
+  z-index: 1000;
+  width: 136.6px;
+    background: #ffffffba;
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.highlight-scenario-number {
+  font-weight: 400;
+    background: #e8eae8;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.cesiumLegend {
+  position: absolute;
+  top: 100px;
+  left: 430px;
+  z-index: 1000;
+  background: #ffffffdb;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.metaDataCard {
+  position: absolute;
+  bottom: 50px;
+  left: 430px;
+  z-index: 1000;
+  background: #ffffffdb;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 0.8em;
+  right: 20px;
+  width: 400px;
+  display: none;
+}
+
+.btn-fly-to-area {
+  margin-bottom: 10px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
